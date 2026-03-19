@@ -1,0 +1,238 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Woofly",
+            "heading_size": "h0"
+          }
+        },
+        "text_gyPbAb": {
+          "type": "text",
+          "settings": {
+            "text": "Fedezd fel a kutyád számára készült prémium, stílusos kiegészítőink választékát!",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Termékeink",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text_gyPbAb",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/nudetesthamkutyik3.webp",
+        "image_overlay_opacity": 40,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "rich_text_jmJgiB": {
+      "type": "about-us-card",
+      "name": "About Us Card",
+      "settings": {
+        "eyebrow": "",
+        "title": "Mi is gazdik vagyunk",
+        "text": "<p>Mi is gazdik vagyunk, így pontosan tudjuk, hogy a kutyád nem egyszerűen háziállat, hanem igazi családtag. Ügyelünk arra, hogy a kényelem mellett kedvenced egyedi stílusát és személyiségét is tökéletesen megmutathasd! ✨</p>",
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_xEAFMG": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "teljes-csomagok",
+        "products_to_show": 4,
+        "title": "Best sellerek",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 16,
+        "padding_bottom": 36
+      }
+    },
+    "testimonial_banner_6BcM2n": {
+      "type": "testimonial-banner",
+      "name": "Testimonial Banner",
+      "settings": {
+        "title": "Rólunk mondták",
+        "quote": "Gyönyörű, egységes stílus! Bárhol sétálunk, nagyon sok dicséretet kapunk. A minőség abszolút prémium, luxus. A legfontosabb pedig, hogy szuper kényelmes a kutyának.",
+        "author": "100+ értékelés",
+        "color_scheme": "scheme-88192f40-a6fa-435f-b03e-82da6f8b544b",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "collection_list_i3qtBh": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_ix8dCQ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "teljes-csomagok"
+          }
+        },
+        "featured_collection_GzUJfX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hamok"
+          }
+        },
+        "featured_collection_PhtNqE": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "featured_collection_YLdegB": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kakizacsik"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_ix8dCQ",
+        "featured_collection_GzUJfX",
+        "featured_collection_PhtNqE",
+        "featured_collection_YLdegB"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Kollekciók",
+        "heading_size": "h1",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_quote_banner_T4Dk9p": {
+      "type": "image-quote-banner",
+      "disabled": true,
+      "name": "Image Quote Banner",
+      "settings": {
+        "image": "shopify://shop_images/IMG_4419.jpg",
+        "text": "Imádja a kiskutyám, egyszerűen tökéletes.",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 44
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "all",
+        "products_to_show": 4,
+        "title": "Felkapott termékek",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "177038879440253b46": {
+      "type": "apps",
+      "blocks": {
+        "air_product_reviews_app_block_all_review_aB8cDB": {
+          "type": "shopify://apps/air-product-reviews/blocks/app-block-all-review/c4e1e9ca-4d46-4e76-bc39-7e42417cb327",
+          "settings": {
+            "air_allReviewsBlock_heading": "Értékeléseink",
+            "air_allReviewsBlock_useSimpleSummary": false,
+            "air_allReviewsBlock_maxReview": 10,
+            "air_allReviewsBlock_summaryBgColor": "#f8f8f8",
+            "air_allReviewsBlock_bgColor": "#ffffff",
+            "air_allReviewsBlock_onlyMedia": false,
+            "air_allReviewsBlock_mediaFirst": false,
+            "air_allReviewsBlock_onlyPositive": false,
+            "air_allReviewsBlock_hideProductThumbnails": false,
+            "air_allReviewsBlock_selectedProduct": []
+          }
+        }
+      },
+      "block_order": [
+        "air_product_reviews_app_block_all_review_aB8cDB"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "rich_text_jmJgiB",
+    "featured_collection_xEAFMG",
+    "testimonial_banner_6BcM2n",
+    "collection_list_i3qtBh",
+    "image_quote_banner_T4Dk9p",
+    "featured_collection",
+    "177038879440253b46"
+  ]
+}

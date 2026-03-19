@@ -1,0 +1,78 @@
+.about-us-card-section {
+  position: relative;
+}
+
+@media screen and (max-width: 749px) {
+  .about-us-card-section .page-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about-us-card__inner {
+    text-align: left;
+  }
+
+  .about-us-card__title,
+  .about-us-card__text,
+  .about-us-card__text p {
+    text-align: left;
+  }
+}
+
+.about-us-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3.2rem;
+  padding: 3rem 2.4rem;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.about-us-card__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 72rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-us-card__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0 0 1.2rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: #9a6334;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.24rem;
+  text-transform: uppercase;
+}
+
+.about-us-card__title {
+  margin: 0 0 1.2rem;
+  color: #4c3421;
+  font-size: clamp(2.8rem, 4vw, 4.2rem);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.about-us-card__text {
+  margin: 0;
+  color: #5e4734;
+  font-size: clamp(1.7rem, 2vw, 2rem);
+  line-height: 1.7;
+}
+
+.about-us-card__text p {
+  margin: 0;
+}
+
+@media screen and (min-width: 750px) {
+  .about-us-card {
+    padding: 4rem 4.8rem;
+  }
+}

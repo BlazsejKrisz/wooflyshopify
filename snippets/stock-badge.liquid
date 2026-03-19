@@ -1,0 +1,23 @@
+{%- comment -%}
+  Usage:
+    {% render 'stock-badge', product: product %}
+  Optional:
+    {% render 'stock-badge', product: product, variant: product.selected_or_first_available_variant %}
+{%- endcomment -%}
+
+{%- assign v = variant | default: product.selected_or_first_available_variant -%}
+
+{%- if v -%}
+  {%- assign tracks_inventory = v.inventory_management != blank -%}
+  {%- assign qty = v.inventory_quantity | default: 0 -%}
+
+  {%- if tracks_inventory and qty <= 0 -%}
+    <span class="stock-badge stock-badge--external" role="status" aria-live="polite">
+      Külső raktáron elérhető
+    </span>
+  {%- else -%}
+    <span class="stock-badge stock-badge--instock" role="status" aria-live="polite">
+      Raktáron
+    </span>
+  {%- endif -%}
+{%- endif -%}

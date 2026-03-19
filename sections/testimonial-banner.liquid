@@ -1,0 +1,106 @@
+{{ 'section-testimonial-banner.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="testimonial-banner color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="testimonial-banner__wrap">
+    <div class="page-width">
+      <div class="testimonial-banner__inner{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        {%- if section.settings.title != blank -%}
+          <h2 class="testimonial-banner__title">{{ section.settings.title | escape }}</h2>
+        {%- endif -%}
+
+        <div class="testimonial-banner__quote">
+          <span class="testimonial-banner__quote-mark testimonial-banner__quote-mark--start">“</span>
+          <p class="testimonial-banner__text">{{ section.settings.quote | escape }}</p>
+          <span class="testimonial-banner__quote-mark testimonial-banner__quote-mark--end">”</span>
+        </div>
+
+        {%- if section.settings.author != blank -%}
+          <p class="testimonial-banner__author">
+            <span class="testimonial-banner__author-text">{{ section.settings.author | escape }}</span>
+            <span class="testimonial-banner__stars" aria-hidden="true">★★★★★</span>
+          </p>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Testimonial Banner",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Rólunk mondták"
+    },
+    {
+      "type": "textarea",
+      "id": "quote",
+      "label": "Quote",
+      "default": "Gyönyörű, egységes stílus! Bárhol sétálunk, nagyon sok dicséretet kapunk. A minőség abszolút prémium, luxus. A legfontosabb pedig, hogy szuper kényelmes a kutyának."
+    },
+    {
+      "type": "text",
+      "id": "author",
+      "label": "Author",
+      "default": "100+ értékelés"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-88192f40-a6fa-435f-b03e-82da6f8b544b"
+    },
+    {
+      "type": "header",
+      "content": "Section spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 24
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonial Banner"
+    }
+  ]
+}
+{% endschema %}
